@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  
+}
+
+body {
+  width: 100vw;
+  /* overflow: hidden; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 100vw;
+  font-size: 16px;
+  background-color: #c2d6ba;
+  height: 60px;
+  padding: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+.btn.btn-newBook {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 0px;
+  margin: 20px auto;
+  width: 200px;
+  height: 60px;
+  /* text-align: center; */
+  border-radius: 12px;
+  background-color: #a6b1e3;
+  transition: all 0.06;
+}
+
+.btn.btn-newBook:hover {
+  background-color: #606da6;
+  transform: translateY(-4px);
+  transform: scale(1.1);
+}
+
+.container {
+  /* border: 6px solid #000; */
+  width: 100vw;
+}
+
+.booklist {
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-content: center; */
+}
+
+.card {
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: #c8e8de;
+  width: 260px;
+  height: 300px;
+  border: 4px solid #fff;
+  margin: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 22px;
+  text-align:start;
+  line-height: 2.6;
+  padding: 0px 20px;
+  margin: 0px auto;
+}
+
+.btn.btn-removeBook {
+  display: inline-block;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  top: 8px;
+  left: 100px;
+  background-color: #f76459;
+  transition: all 0.06s;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.btn.btn-removeBook:after {
+  display: inline-block;
+  content: "\00d7";
+  font-size: 30px;
+  padding: 0px;
+  /* justify-content: center;
+  align-items: center; */
+  transition: all 0.2s;
+}
+
+.btn.btn-removeBook:hover:after {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.checkbox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  margin-top: 40px;
+}
+
+label[for="haveReadTheBook"] {
+  margin-right: 6px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.6);
+  padding: 10px;
+}
+
+.inputCard {
+  display: none;
+  width: 300px;
+  height: 360px;
+}
+
+.inputCard.active{
+  background-color: #2f9e69;
+  width: 300px;
+  height: 360px;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  transform: scale(1.2);
+  transition: all 0.6s;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:2px 2px 8px #999, 2px 2px 8px #999;
+  /* left: 40%;  */
+}
+
+#inputCard-checkbox {
+  align-items: center;
+  padding-right: 10px;
+  margin: 20px auto;
+  color: blue;
+  font-size: 20px;
+}
+
+
+.btn.btn-closeInput {
+  display: inline-block;
+  font-size: 26px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f76459;
+  border: 1px solid #333;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.btn.btn-closeInput::before {
+  content:'\00d7';
+  font-size: 26px;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+
+.btn.btn-closeInput:hover::before {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.input.input-info {
+  margin: 10px auto;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+h2 {
+  color: rgb(228, 161, 143);
+}
+
+.btn.btn-addBook {
+  color:rgb(134, 236, 143);
+  display: inline-block;
+  background-color:royalblue;
+  font-size: 26px;
+  margin: 0px;
+  border: 4px solid #333;
+  padding: 0px 40px;
+  border-radius: 20px;
+  transition: all 0.06s;
+}
+
+.btn.btn-addBook:hover {
+  background-color: rgb(93, 126, 226);
+  transform: scale(1.1);
+}
