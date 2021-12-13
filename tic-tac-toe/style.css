@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  /* margin-bottom: 80px; */
+}
+
+
+
+.header {
+  padding: 2px;
+  border-bottom: 3px solid blueviolet;
+  background-color: aquamarine;
+  color: rgb(4, 84, 58)
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+}
+
+.main {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.player-selection {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: aqua;
+  cursor: pointer;
+  font-size: 36px;
+}
+
+.btn-player-selection {
+  margin: 20px 20px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  transition: all 0.06s
+}
+
+.btn-player-selection:hover {
+  box-shadow: 3px 3px 2px aquamarine;
+  transform: translateY(-3px);
+}
+
+.btn-player-selection.active {
+  border: 3px solid #333;
+  background-color: rgb(160, 233, 233);
+}
+
+.message {
+  font-size: 20px;
+  text-align: center;
+  padding: 2px 0;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 453px;
+  height: 453px;
+  border: 2px solid #222;
+  margin: 2px auto; 
+}
+
+.field {
+  /* display: flex; */
+  width: 150px;
+  height: 150px;
+  border: 1px solid #333;
+  background-color:bisque;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  line-height: 150px;
+  /* justify-content: center;
+  align-items: center; */
+  color:#000;
+  font-size: 100px;
+}
+
+.field:hover {
+  background-color:rgb(160, 233, 233);
+}
+
+.btn-restart {
+  margin: 10px auto;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.06s;
+}
+
+.btn-restart:hover {
+  background-color: rgb(160, 233, 233);
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px rgb(103, 161, 161);
+}
+
+.btn-restart:active {
+  background-color: dodgerblue;
+}
+
+
